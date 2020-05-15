@@ -1,0 +1,93 @@
+<!--pages/orders/orders.wxml-->
+<view bindtap="addsite" class="order face-order">   
+ <image style="width:24rpx;height:32rpx;padding-right: 24rpx;" src="../../image/order/mao.jpg"/>    
+           <view class="address">
+           <text>姓名 123456789</text>
+           <text>地址河南郑州郑东新区东站升龙广场</text>
+           </view>
+                <view  class="s weui-cell__ft weui-cell__ft_in-access">选择</view>
+
+</view>
+<view  class="im" >
+ <!-- <image style="width: 750rpx;height:5rpx;" src="../../image/order/border.jpg"/>  -->
+</view>
+<!-- 
+<view class="addmessage">
+<view class="add" bindtap="show">
+<image style="width:40rpx;height:40rpx;padding:20rpx;" src="../../image/order/add.jpg"/>
+填写实名信息（海关使用）
+</view>
+</view> -->
+
+<view class="list">
+
+<view class="list1">
+<view class="li bor">精选好物</view>
+<view class="li" style="width: 80rpx;">包邮</view>
+</view>
+
+<view class="list2">
+<view class="liat2-img">
+<image style="width:130rpx;height:130rpx;padding:30rpx;padding-right:50rpx;" src="../../image/order/img1.jpg"/>
+</view>
+
+<view class="list2-mess">
+<text style="color:#333333;font-size:28rpx;">{{spName}}</text>
+<text style="color:#999999;font-size:26rpx;">规格：象牙白 1w1 #17{{type}}</text>
+<text style="color:#FF5A60;font-size:28rpx;font-weight: bold;">￥{{price}}</text>
+</view>
+</view>
+
+
+<view class="total list3">
+<text style="color:#999999;">共{{num}}件</text>
+<text style="color:#FF5A60;">合计： ￥{{monney}}</text>
+</view>
+
+<view class="total buts">
+<view class="but" bindtap="pay">提交订单</view>
+</view>
+</view>
+
+<view class="bottom">
+<view class="total list3">
+<text style="color:#999999;">商品金额</text>
+<text style="color:#333333;"> ￥{{monney}}</text>
+</view>
+<view class="total list3">
+<text style="color:#999999;">订单邮费</text>
+<text style="color:#333333;">￥0.00（免邮费）</text>
+</view>
+<view class="total list3">
+<text style="color:#999999;">优惠券</text>
+<text class="weui-cell__ft weui-cell__ft_in-access" style="color:#333333;">无可使用的优惠券</text>
+</view>
+</view>
+ <!-- -->
+<view  class="modal-box" hidden="{{flags}}" >
+
+
+    <view class="modal-body" hidden="{{flags}}">
+<view class="modal title">
+<text>海关身份实名认证</text>
+<view bindtap="close" class="close">关闭</view>
+</view>
+<view class="modal text">根据海关规定 ，购买人身份信息需与支付软件实名信息一致，否则将导致包裹被卡关。</view>
+<view class="modal name text">
+  <input class="weui-input ss" style="border: 1rpx solid;border-color:{{border}};"  bindinput="userName" hidden="{{flag1}}" name="userName" placeholder="请输入支付人姓名" />
+</view>
+<view class="modal text">
+ <input class="weui-input ss" style="border: 1rpx solid;border-color:{{border1}};"  bindinput="cardId" hidden="{{flag2}}" name="cardId" placeholder="请输入支付人身份证号" />
+</view>
+<view  class="modal button">
+<view bindtap="hide" class="total buts">
+<view class="but">确定</view>
+</view>
+</view>
+
+<view class="modal foot text">
+*商家负责提交信息 ，并对您的身份信息保密 ，绝不传播或用于其他地方，请放心填写。
+</view>
+    </view>
+ 
+</view>

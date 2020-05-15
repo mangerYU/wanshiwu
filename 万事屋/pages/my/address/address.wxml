@@ -1,0 +1,39 @@
+<!-- <radio-group class="radio-group" bindchange="radio" >
+
+    <label class="radio" wx:for="{{fakeDatas}}" >
+        <radio value="{{item.id}}" checked="{{item.selected}}"/>{{item.name}}
+    </label>
+
+</radio-group> -->
+      <radio-group bindchange="radio" >
+
+    <label  wx:for="{{fakeDatas}}" >
+        <radio class="radio" value="{{item.id}}" checked="{{item.selected}}">
+
+<view wx:if="{{showLeftScroll}}" class="touch-item">
+  <view class="content"  data-index="{{index}}">
+    <text style='  font-size:30rpx;'>{{item.name}} {{item.phone}}</text>
+    
+      <text>{{item.address}}</text>
+  </view>
+  <view class="dele" bindtap="modify" data-index="{{index}}">修改</view>
+  <view class="dele" style='background-color:#c95b54;' bindtap="del">删除</view>
+</view>
+        
+        </radio>
+    </label>
+
+</radio-group> 
+<!-- 
+  <view class="content"  data-index="{{index}}">
+    <text style='font-size:36rpx;'>{{item.name}} {{item.phone}}</text>
+      <text>{{item.address}}asfaetfsadvghadfvsdf</text>
+  </view>
+  <view class="dele" bindtap="modify" data-index="{{index}}">修改</view>
+  <view class="dele" style='background-color:#c95b54;' bindtap="del">删除</view> -->
+
+<view class="confirms">
+ <view bindtap="button" class="confirm">
+            <text>确定</text>
+            </view>
+</view>

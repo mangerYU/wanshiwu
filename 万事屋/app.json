@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/open/open",
+    "pages/index/index",
+    "pages/commodity/commodity",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/details/details",
+    "pages/orders/orders",
+    "pages/addsite/addsite",
+    "pages/seek/seek",
+    "pages/my/myorder/myorder",
+    "pages/my/address/address",
+    "pages/seek/seekcomm/seekcomm"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "万事屋",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#FF5A60",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index/index.jpg",
+        "selectedIconPath": "image/index/index1.jpg",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/commodity/commodity",
+        "iconPath": "image/index/comm.jpg",
+        "selectedIconPath": "image/index/comm1.jpg",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "image/index/car.jpg",
+        "selectedIconPath": "image/index/car1.jpg",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "image/index/my.jpg",
+        "selectedIconPath": "image/index/my1.jpg",
+        "text": "我的"
+      }
+    ]
+  }
+}

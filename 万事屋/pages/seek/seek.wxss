@@ -1,0 +1,111 @@
+/* pages/seek/seek.wxss */
+
+.search {
+  width: 450rpx;
+  height: 56rpx;
+}
+
+.head {
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_arr {
+ 
+  border-radius: 50rpx;
+  background-color: #eee;
+  display: flex;
+ flex-wrap: nowrap;
+ justify-content: flex-end;
+}
+.hunts{
+    height:50rpx;
+  width: 100rpx;
+   margin-top: 5rpx;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.search_arr input {
+width: 340rpx;
+  border-radius: 5px;
+  font-size: 25rpx;
+}
+
+.history {
+  height: 350rpx;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+   align-items: center;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+
+}
+.hist-content {
+  height: 250rpx;
+
+}
+.inputs{
+  position:fixed;
+  background:rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.modal-body{
+  widows: 100%;
+  height: 100rpx;
+  font-size: 26rpx;
+  background-color: white;
+  border-bottom: 2rpx solid silver;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.hist-item{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 28rpx;
+margin-right: 40rpx;
+border-radius: 50rpx;
+background-color: rgb(216, 211, 211);
+}
+.hot {
+  height:600rpx;
+  display: flex;
+  flex-direction: column;
+  
+}
+.content{
+ display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 30rpx;
+}
+.hot-content {
+  height: 500rpx;
+justify-content: space-between;
+
+}
+.hot-item{
+width: 300rpx;
+height: 60rpx;
+flex-wrap: wrap;
+display: flex;
+align-items: center;
+font-size: 28rpx;
+color: #111111;
+}

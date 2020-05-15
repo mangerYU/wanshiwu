@@ -1,0 +1,14 @@
+ <view class="navbar"> 
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" bindtap="navbarTap">{{item}}</text>
+
+</view>
+   <block wx:for="{{list}}" wx:key="id">
+        <view class="nav_right_items" bindtap="details">
+       <!-- 界面跳转 -->        
+       <image src="{{item.commodity_picturesite}}"></image>
+       <text >{{item.commodity_subtitle}}</text>
+        <text class="text">$:{{item.commodity_price}} </text> 
+           <text class="text1">规格：{{item.commodity_specification}}</text> 
+
+        </view>
+      </block>

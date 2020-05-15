@@ -1,0 +1,208 @@
+<!--pages/my/myorder/myorder.wxml-->
+
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!---->
+<view hidden="{{currentTab!=0}}">
+  
+  <view class="order">
+  <view class="order-state">全部</view>
+
+  <view class="order-comm">
+  <view class="img"><image style=' width:180rpx;height: 180rpx;background-color:red;' src=''></image> </view>
+
+  <view class="order-text">
+  <text>2019年春款中长款遮小腿百褶适合胯大腿粗的半身裙女</text>
+    <text style="color:#9A9A9A;  margin-top: 34rpx;">白色：均码</text>
+  </view>
+
+   <view class="order-price">
+  <text style="color: #333333;">￥79.00</text>
+    <text style="color:#9A9A9A;margin-left: 60rpx;">x1</text>
+  </view>
+  </view>
+
+<view class="order-foot">
+<view class="states font">
+<text class="inter">运费险</text>
+<text class="inter" style="color:#9A9A9A;">确认收货前退货可理赔</text>
+<text class="inter" style="color:#FFC003;">已出单</text>
+</view>
+<view class="states font">
+<text class="inter">共1件商品</text>
+<text class="inter">合计：￥97.00</text>
+</view>
+<view class="states font">
+<view class="circle inter">查看物流</view>
+<view class="circle inter">取消订单</view>
+<view class="circle qr inter">确认收货</view>
+</view>
+</view>
+
+
+  </view>
+
+</view>
+ 
+<!---->
+<view hidden="{{currentTab!=1}}">
+<view class="order">
+  <view class="order-state">待支付</view>
+
+  <view class="order-comm">
+  <view class="img"><image style=' width:180rpx;height: 180rpx;background-color:red;' src=''></image> </view>
+
+  <view class="order-text">
+  <text>2019年春款中长款遮小腿百褶适合胯大腿粗的半身裙女</text>
+    <text style="color:#9A9A9A;  margin-top: 34rpx;">白色：均码</text>
+  </view>
+
+   <view class="order-price">
+  <text style="color: #333333;">￥79.00</text>
+    <text style="color:#9A9A9A;margin-left: 60rpx;">x1</text>
+  </view>
+  </view>
+
+<view class="order-foot">
+<view class="states font">
+<text class="inter">运费险</text>
+<text class="inter" style="color:#9A9A9A;">确认收货前退货可理赔</text>
+<text class="inter" style="color:#FFC003;">已出单</text>
+</view>
+<view class="states font">
+<text class="inter">共1件商品</text>
+<text class="inter">合计：￥97.00</text>
+</view>
+<!-- <view class="states font">
+<view class="circle inter">查看物流</view>
+<view class="circle inter">取消订单</view>
+<view class="circle qr inter">确认收货</view>
+</view> -->
+</view>
+
+
+  </view>
+</view>
+ 
+<!---->
+<view hidden="{{currentTab!=2}}">
+  <view class="order">
+  <view class="order-state">待发货</view>
+
+  <view class="order-comm">
+  <view class="img"><image style=' width:180rpx;height: 180rpx;background-color:red;' src=''></image> </view>
+
+  <view class="order-text">
+  <text>2019年春款中长款遮小腿百褶适合胯大腿粗的半身裙女</text>
+    <text style="color:#9A9A9A;  margin-top: 34rpx;">白色：均码</text>
+  </view>
+
+   <view class="order-price">
+  <text style="color: #333333;">￥79.00</text>
+    <text style="color:#9A9A9A;margin-left: 60rpx;">x1</text>
+  </view>
+  </view>
+
+<view class="order-foot">
+<view class="states font">
+<text class="inter">运费险</text>
+<text class="inter" style="color:#9A9A9A;">确认收货前退货可理赔</text>
+<text class="inter" style="color:#FFC003;">已出单</text>
+</view>
+<view class="states font">
+<text class="inter">共1件商品</text>
+<text class="inter">合计：￥97.00</text>
+</view>
+<view class="states font">
+<view class="circle inter">查看物流</view>
+<view class="circle inter">取消订单</view>
+<view class="circle qr inter">确认收货</view>
+</view>
+</view>
+
+
+  </view>
+</view>
+<!---->
+<view hidden="{{currentTab!=3}}">
+<view class="order">
+  <view class="order-state">待收货</view>
+
+  <view class="order-comm">
+  <view class="img"><image style=' width:180rpx;height: 180rpx;background-color:red;' src=''></image> </view>
+
+  <view class="order-text">
+  <text>2019年春款中长款遮小腿百褶适合胯大腿粗的半身裙女</text>
+    <text style="color:#9A9A9A;  margin-top: 34rpx;">白色：均码</text>
+  </view>
+
+   <view class="order-price">
+  <text style="color: #333333;">￥79.00</text>
+    <text style="color:#9A9A9A;margin-left: 60rpx;">x1</text>
+  </view>
+  </view>
+
+<view class="order-foot">
+<view class="states font">
+<text class="inter">运费险</text>
+<text class="inter" style="color:#9A9A9A;">确认收货前退货可理赔</text>
+<text class="inter" style="color:#FFC003;">已出单</text>
+</view>
+<view class="states font">
+<text class="inter">共1件商品</text>
+<text class="inter">合计：￥97.00</text>
+</view>
+<view class="states font">
+<view class="circle inter">查看物流</view>
+<view class="circle inter">取消订单</view>
+<view class="circle qr inter">确认收货</view>
+</view>
+</view>
+
+
+  </view>
+</view>
+<!--我-->
+<view hidden="{{currentTab!=4}}">
+ <view class="order">
+  <view class="order-state">售后</view>
+
+  <view class="order-comm">
+  <view class="img"><image style=' width:180rpx;height: 180rpx;background-color:red;' src=''></image> </view>
+
+  <view class="order-text">
+  <text>2019年春款中长款遮小腿百褶适合胯大腿粗的半身裙女</text>
+    <text style="color:#9A9A9A;  margin-top: 34rpx;">白色：均码</text>
+  </view>
+
+   <view class="order-price">
+  <text style="color: #333333;">￥79.00</text>
+    <text style="color:#9A9A9A;margin-left: 60rpx;">x1</text>
+  </view>
+  </view>
+
+<view class="order-foot">
+<view class="states font">
+<text class="inter">运费险</text>
+<text class="inter" style="color:#9A9A9A;">确认收货前退货可理赔</text>
+<text class="inter" style="color:#FFC003;">已出单</text>
+</view>
+<view class="states font">
+<text class="inter">共1件商品</text>
+<text class="inter">合计：￥97.00</text>
+</view>
+<!-- <view class="states font">
+<view class="circle inter">查看物流</view>
+<view class="circle inter">取消订单</view>
+<view class="circle qr inter">确认收货</view>
+</view> -->
+</view>
+
+
+  </view>
+</view>
+
+
+

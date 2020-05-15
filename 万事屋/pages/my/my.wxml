@@ -1,0 +1,106 @@
+<!--pages/my/my.wxml-->
+<view class="head" style="background-image: url('http://m.qpic.cn/psb?/V11DeesJ3FTt4G/fpo9Bw1P3vw0v92Y451O3bEaSEk3qacdZ4WYGzcTcoo!/b/dNEAAAAAAAAA&bo=7gIsAQAAAAARB*E!&rf=viewer_4');background-size:100% 100%; -moz-background-size:100% 100%">
+<view class="header-imgs">
+<view class="prot" open-type="getUserInfo" >
+      <image class="image" mode="scaleToFill" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}"></image>
+<!-- <image mode="scaleToFill" src="{{src}}"/> -->
+</view>
+<view class="grade">
+
+<view><text> {{userInfo.nickName}}</text><image mode="scaleToFill" src="{{grade}}"/></view>
+
+
+<view style="font-size:24rpx;">积分:{{int}}</view>
+</view>
+</view>
+<view class="header-set">
+<view class="set-down" bindtap="signin" style="background-image: url('http://m.qpic.cn/psb?/V11DeesJ3FTt4G/Ii64onF5rS0w6Sfle*UzYCG0rTP40okRm1j5G1c1OCU!/b/dL4AAAAAAAAA&bo=eAB4AAAAAAADByI!&rf=viewer_4');background-size:100% 100%; -moz-background-size:100% 100%"></view>
+</view>
+</view>
+
+<view class="face">
+
+<view  bindtap="to1" data-id="0" class="face-order">
+ <view class="order" hover-class="order-active">         
+                <view class="weui-cell__bd">我的订单</view>
+                <view class="s weui-cell__ft weui-cell__ft_in-access">查看全部订单</view>
+            </view>
+</view>
+
+<view class="face-four">
+<view bindtap="to1"  data-id="1" class="fa">
+<view class="img"><image  mode="scaleToFill" src="../../image/my/z1.jpg"/> </view>
+<text>待支付</text>
+</view>
+
+<view bindtap="to1" data-id="2" class="fa">
+<view class="img"><image  mode="scaleToFill" src="../../image/my/z5.jpg"/> </view>
+<text>待发货</text>
+</view>
+
+<view bindtap="to1" data-id="3" class="fa">
+<view class="img"><image  mode="scaleToFill" src="../../image/my/z3.jpg"/> </view>
+<text>待收货</text>
+</view>
+
+<view bindtap="to1" data-id="4" class="fa">
+<view class="img"><image  mode="scaleToFill" src="../../image/my/z4.jpg"/> </view>
+<text>售后服务</text>
+</view>
+
+</view>
+</view>
+
+<view class="list">
+
+<view class="list-member lis">
+ <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../image/my/3.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">会员中心</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+</view>
+
+<view class="list-buy lis">
+ <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../image/my/2.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">我的团购</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+</view>
+
+<view class="list-favor lis">
+ <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../image/my/5.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">优惠券</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+</view>
+
+<view class="list-map lis">
+ <navigator url="./address/address" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../image/my/0.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">地址管理</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+</view>
+
+<view class="list-service lis">
+ <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="../../image/my/z2.jpg" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">联系客服</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+            </navigator>
+</view>
+
+</view>

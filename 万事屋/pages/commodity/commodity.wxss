@@ -1,0 +1,222 @@
+/* pages/commodity/commodity.wxss */
+.search {
+ width: 450rpx;
+  height: 56rpx;
+margin-right: 50rpx;
+}
+.head{
+height: 80rpx;
+width: 100%;
+  display: flex;
+  align-items: center;
+ justify-content: flex-end;
+}
+.search_arr {
+  border-radius: 50rpx;
+  background-color: #eee;
+  display: flex;
+ flex-wrap: nowrap;
+ justify-content: flex-end;
+}
+
+.search_arr input {
+width: 340rpx;
+  border-radius: 5px;
+  font-size: 25rpx;
+}
+.hunts{
+    height:50rpx;
+  width: 100rpx;
+   margin-top: 5rpx;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.searchcion {
+ margin: 18rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+margin-left: 160rpx;
+height: 26rpx;
+width: 24rpx;
+}
+.record{
+  width:100rpx;
+  height: 100rpx;
+font-size: 22rpx;
+color: #999999;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.record image{
+  width: 33rpx;
+  height: 33rpx;
+  margin-left:10rpx; 
+}
+
+.foot{
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+  width: 550rpx;
+  height: 80rpx;
+ font-size: 26rpx;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+
+}
+.navbar .item {
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 50rpx;
+   /* border: #EEEEEE 1px solid; */
+}
+
+.navbar .item.active {
+  color: #FF5A60;
+ 
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+}
+
+page{
+  height: 100%;
+}
+/*总体主盒子*/
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #777777;
+   border: #EEEEEE 1px solid;
+}
+ 
+/*左侧栏主盒子*/
+.nav_left{
+  /*设置行内块级元素（没使用定位）*/
+  display: inline-block;
+  width: 200rpx; 
+  text-align: center;
+   border: #EEEEEE 1px solid;
+align-items:center;
+justify-content:center;
+
+
+}
+/*左侧栏list的item*/
+.nav_left .nav_left_items{
+  height:70rpx;
+  /* line-height: 50rpx; */
+  font-size: 26rpx;
+margin-top: 22rpx;
+  /* border: #EEEEEE 1px solid; */
+
+}
+
+/*左侧栏list的item被选中时*/
+.nav_left .nav_left_items.active{
+  color: #FF5A60;
+}
+ 
+/*右侧栏主盒子*/
+.nav_right{
+  /*右侧盒子使用了绝对定位*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  flex: 1;
+  /*宽度75%，高度占满，并使用百分比布局*/
+  width:550rpx;
+  height: 100%;
+  box-sizing: border-box;
+   /* border: #EEEEEE 1px solid; */
+}
+/*右侧栏list的item*/
+.nav_right .nav_right_items{
+  width:100%;
+  height: 170rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  color:#333333;
+  position: relative;
+  background: #EEEEEE;
+}
+.nav_right .nav_right_items image{
+  /*被图片设置宽高*/
+  width: 170rpx;
+  height: 170rpx;
+  border-radius: 22rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+.nav_right .nav_right_items text{
+  font-size: 24rpx;
+  /* overflow: hidden; */
+ 
+  /* text-overflow: ellipsis; */
+}
+.nodata_text
+{
+  color: black;
+  font-size: 14px;  
+  text-align: center;  
+} 
+.left{
+  width: 100%;
+  height: 100%;
+}
+.buttons{
+  height: 100%;
+}
+.text{
+position: absolute;
+top:70rpx;
+left:180rpx;
+color: #FF5A60;
+margin-top: 65rpx;
+
+}
+/* 隐藏的分类 */
+.classify{
+width: 300rpx;
+height: 300rpx;
+background-color: red;
+}
+.tabs{
+  width: 100%;
+  height: 100%;
+    display: flex;
+  flex-direction: row;
+}
+.tabs .tab{
+  width: 150rpx;
+  height: 150rpx;
+  /* background-color: #FF5A60; */
+  margin: 15rpx;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+
+
+}
+.tabs_image{
+  width: 150rpx;
+  height: 130rpx;
+
+}

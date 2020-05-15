@@ -1,0 +1,43 @@
+<!--pages/seek/seek.wxml-->
+<view class="head">
+  <view class="search">
+    <view class="search_arr">
+    <!-- -->
+  
+      <input bindinput="search" name="search" value="{{search}}" class="weui-input" placeholder="请输入商品名称" />
+        <icon  class="hunts" bindtap="hunts" size='16' type='search'></icon> 
+          <!-- <view></view> -->
+    </view>
+  </view>
+</view>
+<!-- -->
+<view class="inputs" hidden="{{flag}}" bindtap="hide">
+ <view wx:for="{{seek}}" class="modal-body"  data-text="{{item.commodity_name}}" bindtap="enter" >{{item.commodity_name}}</view>
+</view>
+
+<view class="history">
+<view class="title">
+历史搜索
+<image bindtap="empty" style="width: 36rpx;height:37rpx;" src="../../image/seek/dele.png"/> 
+</view>
+<view class="hist-content content">
+<view wx:for="{{searchs}}" wx:key='{{item}}'>          
+<text class="hist-item" data-text="{{item.name}}" bindtap="onsearch"> {{item.name}}</text>
+</view>
+</view>
+</view>
+
+<view class="hot">
+<view class="title">
+热门搜索
+<image bindtap="eye" style="width: 36rpx;height:37rpx;" src="../../image/seek/eye.png"/> 
+</view>
+<view hidden="{{flags}}" class="hot-content content">
+<view wx:for="{{hot}}" >
+<view class="hot-item">{{item}}</view> 
+</view>
+</view>
+
+
+</view>
+

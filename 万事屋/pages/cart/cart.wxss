@@ -1,0 +1,283 @@
+/* pages/cart/cart.wxss */
+page{
+background-color: #F7F7F7;
+
+}
+.list {
+  width: 100%;
+  height: 280rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20rpx;
+  background-color: white;
+}
+/* 编辑 */
+.edit {
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f6f6f6;
+}
+
+/* 删除 */
+.dele_edit {
+  width: 40rpx;
+  height: 40rpx;
+  background-color: red;
+}
+
+/* 编辑标题 */
+.edit_btn {
+  position: absolute;
+  font-size: 24rpx;
+  color: #888;
+  right: 30rpx;
+}
+
+/* 单选状态 */
+
+.radio_chek {
+  width: 40rpx;
+  height: 40rpx;
+}
+.icon{
+  height: 280rpx;
+width:80rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.images{
+display: flex;
+width: 250rpx;
+height: 280rpx;
+justify-content: center;
+align-items: center;
+}
+ .content{
+width: 400rpx;
+height: 280rpx;
+display: flex;
+flex-direction: column;
+
+ }
+/* 列表商品图片 */
+.list_img {
+  width: 180rpx;
+  height: 180rpx;
+}
+.party{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-bottom: 35rpx;
+margin-top: 40rpx;
+font-size: 24rpx;
+}
+
+/* 列表商品名称 */
+.list_name {
+  left: 280rpx;
+  width: 300rpx;
+}
+/* 列表规格 */
+.cart_g_name {
+  font-size: 24rpx;
+  color: #aaa;
+}
+/* 收藏 */
+.collert {
+  font-size: 28rpx;
+}
+/* 收藏图标 */
+.collert_img {
+  width: 28rpx;
+  height: 28rpx;
+}
+.price{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+margin-top: 40rpx;
+}
+/* 列表商品价格 */
+.list_price {
+  font-size: 30rpx;
+  color: #d66058;
+}
+
+/* 列表商品删除 */
+
+.list_del {
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 44rpx;
+}
+
+/* 固定底部 */
+
+.cont_bot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background: #fff;
+  border-top: 2rpx solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 全选ICON */
+.total-select {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+
+/* 全选标题 */
+.sel_count_name {
+  font-size: 26rpx;
+  color: #999;
+}
+.price2{
+height: 90rpx;
+width: 300rpx;
+display:flex;
+flex-direction: column;
+margin: 0;
+}
+/* 合计金额 */
+.count_price {
+  font-size: 26rpx;
+  color: #333;
+}
+
+.count_price text {
+  font-size: 34rpx;
+  color: #d66058;
+}
+
+/* 购物车为空 */
+
+.list_none {
+  padding: 40rpx 0;
+  color: #999;
+  text-align: center;
+}
+
+/* 提交 */
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220rpx;
+  height: 90rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background-color: #ff5a60;
+}
+
+.navigator-hover {
+  background: none;
+}
+
+/*数量加减*/
+
+.carts-num {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 50rpx;
+border-radius: 60rpx;
+  width: 152rpx;
+  border: 1rpx solid #D2D2D2;
+
+}
+
+.view_text_center {
+  font-size: 30rpx;
+  display: inline-block;
+  color: #888;
+  width: 30rpx;
+  height: 40rpx;
+  margin-bottom: 5rpx;
+}
+
+.carts-num .minus, .carts-num .plus {
+    border: 1rpx solid #D2D2D2;
+  margin: 10rpx;
+  color: #D2D2D2;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carts-num .minus {
+  
+  font-size: 34rpx;
+}
+
+/* .carts-num .minus.disabled{color: red;} */
+
+.carts-num .plus {
+  font-size: 34rpx;
+}
+.total{
+height: 90rpx;
+width: 200rpx;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.size {
+  color: #999;
+  width: 152rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  /* background-color: gold; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-right: 33rpx;
+  border: 1px solid #ddd;
+  align-items: center;
+}
+
+
+
+
+
+.round {
+  color: #d2d2d2;
+  border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 背景的宽 */
+  height: 40rpx; /* 背景的高 */
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*普通样式*/
+
+.normal {
+  color: gray;
+}
+
+/*禁用样式*/
+
+.disabled {
+  color: #ccc;
+}

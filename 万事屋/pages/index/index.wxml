@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<cover-view class="tab-bar">
+
+  <cover-view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <cover-image src="{{selected === index ? item.selectedIconPath : item.iconPath}}"></cover-image>
+    <cover-view style="color: {{selected === index ? selectedColor : color}}">{{item.text}}</cover-view>
+  </cover-view>
+</cover-view>
+<view class="head">
+  <view bindtap="seek" class="search">
+    <view class="search_arr">
+      <!-- <icon class="searchcion" size='35rpx' type='search'></icon> -->
+      <input class="weui-input" disabled placeholder="请输入商品名称" />
+      <icon  class="hunts" size='16' type='search'></icon> 
+    </view>
+  </view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#999999" indicator-active-color="white" class="big">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item >
+      <image class="imgs" mode="scaleToFill" src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="head2">
+ 热销推荐
+</view>
+<scroll-view  class="image-group" scroll-x="true">
+  <image bindtap="details" mode="scaleToFill" wx:for="{{imglist}}" src="{{item}}" />
+    <image  />
+</scroll-view>
+
+
+<view class="head2">
+ 猜你喜欢
+</view>
+
+<scroll-view class="foot">
+  <image bindtap="details" wx:for="{{imagefoot}}" src="{{item}}" />
+</scroll-view>

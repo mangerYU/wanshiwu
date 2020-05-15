@@ -1,0 +1,60 @@
+ 
+ 
+ <view class="head">
+  <view bindtap="seek" class="search">  
+        <view class="search_arr">  
+          <!-- <icon class="searchcion" size='15' type='search'></icon>   -->
+          <input class="weui-input" placeholder="请输入商品名称"/>  
+           <icon  class="hunts" size='16' type='search'></icon> 
+        </view>     
+      </view>   
+    
+        <view class="record"><image style="height:35rpx;width:35rpx;"  src="../../image/comm/record.jpg"/>记录</view>
+</view>
+
+<!-- 
+<view wx:for="{{cateItems}}" wx:key="id">{{cateItems}}</view> -->
+ <view class="container">
+  <!-- 左侧栏 -->
+  <view class="nav_left">
+    <block wx:for="{{cateItems}}" wx:key="id">
+      <!-- 当前项的id等于item项的id，那个就是当前状态
+      用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用 -->
+      <view class="nav_left_items {{curNav == item.id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.id}}">{{item.category_name}}</view>
+    </block>
+  </view>
+  <!-- 右侧栏 -->
+  <view class="nav_right">
+<view class="tabs">
+<block wx:for="{{navbar}}" >
+
+<view class="tab" bindtap="oncomm">
+<image class="tabs_image" src='{{item.category_picture}}'></image>
+{{item.category_name}}</view>
+</block>
+</view>
+
+ <!-- <view class="navbar"> 
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+
+</view> -->
+
+   <!-- 如果有数据，才遍历项 -->
+    <!-- <view wx:if="{{cateItems[curIndex].category_state}}"> -->
+      <!-- <block wx:for="{{cateItems[curIndex].children}}" wx:key="id"> -->
+        <!-- <view class="nav_right_items"> -->
+       <!-- 界面跳转 -->
+          <!-- <navigator url="/pages/details/details"> -->
+<!--  <image src="{{item.image}}"></image> -->
+       <!-- <text >雅诗兰黛 DOUBLE WEAR 粉底液 30mlaaaa</text>
+        <text class="text"> {{item.name}}</text> 
+          </navigator>
+        </view> -->
+      <!-- </block> -->
+    <!-- </view> -->
+   <!-- 如果无数据，则显示数据 -->
+    <!-- <view class="nodata_text" wx:else>该分类暂无数据</view> -->
+  </view> 
+
+</view>
+

@@ -1,0 +1,74 @@
+<!--pages/addsite/addsite.wxml-->
+   <view class="weui-cell weui-cell_input top">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">收货人</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input bindinput="nameinput" name="userName"  class="weui-input" placeholder="请输入收货人真实姓名"/>
+                </view>
+                            <icon  hidden="{{flag}}" type="warn" size="23" color="#F43530"></icon>
+            </view>
+             <view class="weui-cell weui-cell_input  top">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input bindinput="phoneinput" class="weui-input" placeholder="请输入收货人手机号码"/>
+                </view>
+                        <icon  hidden="{{flag2}}" type="warn" size="23" color="#F43530"></icon>
+            </view>
+
+            <view class="button">
+
+             <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">省</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+
+             <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">市</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+
+             <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">区/县</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindCountryChange" value="{{countryIndex}}" range="{{countries}}">
+                        <view class="weui-select weui-select_in-select-after">{{countries[countryIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+
+             <view class="weui-cell weui-cell_input top">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">详细地址</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input bindinput="address" name="address" class="weui-input" placeholder="请输入详细地址"/>
+                </view>
+            </view>
+
+            </view>
+
+<view class="confirms">
+ <view bindtap="button" class="confirm">
+            <text>确定</text>
+            </view>
+</view>
+           
+
+
